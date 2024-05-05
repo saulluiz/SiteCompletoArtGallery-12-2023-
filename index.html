@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/perfil.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/popoup.css"> -->
+    <link rel="stylesheet" href="css/app.css">
+  <title>Home</title>
+</head>
+
+<body >
+
+
+  <nav class="menu">
+    <div class="botaoNav">
+      <img src="/media/elementosSite/Design sem nome (1) (1).png">
+      <a href="index.html">
+        <h1>ArtGallery</h1>
+      </a>
+    </div>
+    <div id="listaLinks">
+      <a href="index.html">Home</a>
+      <a href="#" onclick="inserirdados()">Inserção</a>
+      
+
+    </div>
+    <dialog  id="modalJS"> 
+      <form id="formularioPopup">
+        <form id="formularioPopup">
+          <div>
+          <label for="nomeAlbum">Nome do artista/álbum:</label>
+          <input type="text" id="nomeAlbum" name="nomeAlbum"><br><br></div>
+          <div>
+          <label for="descricaoDoAlbum">Descrição do Album:</label>
+          <input type="textarea" id="descricaoDoAlbum" name="descricaoDoAlbum"><br><br></div>
+          <div>
+          <label for="anoPeriodo">Ano/período:</label>
+          <input type="text" id="anoPeriodo" name="anoPeriodo"><br><br></div>
+          <div>
+          <label for="localizacaoForm">Localização:</label>
+          <input type="text" id="localizacaoForm" name="localizacaoForm"><br><br></div>
+          <div>
+          <label for="imagemForm">Imagem(URL):</label>
+          <input type="text" id="imagemForm" name="imagemForm"><br><br></div>
+          <Label for="numeroFotos">Quantidade de fotos</Label>
+          <div><input type="number" name="numeroFotos" value="1" min="1" id="numFoto"></div>
+          <div id="destaqueQuestao">
+            <label for="destaque" id="textoDestaque"> Colocar album em destaque?</label>
+          <input id="destaque" type="checkbox" name="destaque"></div>
+    <div id="botoesPopPop">
+
+      <button id="enviarFormulario" class="botaoFormularioInput" onclick="uparInf()"> Upload Informações</button>
+      <button id="descartarDados" class="botaoFormularioInput" onclick="fecharPopPop()"> Descartar</button>
+    </div>
+        </form>
+        
+      </form>
+      
+      
+      </dialog>
+
+
+
+  </nav>
+  <article>
+    <h2>Destaque</h2>
+
+    <section id="carro">
+      
+
+
+     
+
+
+
+
+    </section>
+    <h2>Mapa</h2>
+
+
+    <section id="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.59795757699!2d-44.04662274608247!3d-19.90253583914758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1694258462357!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    </section>
+
+    <h2>Lista de Álbuns</h2>
+
+    <section id="cards">
+
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="mediaRow">
+      
+
+
+
+      </div> 
+
+    </section>
+
+
+
+
+  </article>
+
+
+
+  <footer>
+    <div id="sobre">
+      <h2 id="creditando">Créditos</h2>
+      <h2> Sobre</h2>
+      <p>Saulo Luiz de Oliveira e Silva, técnico em Automação Industrial, estudante de Sistema de informações na PUC MG. Nasceu dia 21/03/2005,tem 18 anos,pretende concluir o curso e ingressar no mestrado.</p>
+    </div>
+    <div id="perfil">
+      <div id="fotoIcone">
+        <img src="/media/elementosSite/1672938381701.jpg">
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
+      </div>
+      <div>
+
+        <h2>Aluno:</h2>
+        <h3>Saulo Luiz de Oliveira e Silva</h3>
+      </div>
+      <div>
+
+        <h2>Curso:</h2>
+        <h3>Sistemas da Informação</h3>
+      </div>
+      <div>
+
+        <h2>Turma:</h2>
+        <h3>1º Periodo</h3>
+      </div>
+
+
+      <div id="icones">
+
+      </div>
+
+    </div>
+  </footer>
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>
